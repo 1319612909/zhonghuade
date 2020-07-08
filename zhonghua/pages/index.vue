@@ -15,11 +15,11 @@
 
 <script>
 	import navBar from '../components/navBar.vue'
-	import Home from './home.vue'
-	import Like from './like.vue'
-	import Add from './add.vue'
-	import Information from './information.vue'
-	import PersonInfo from './personInfo.vue'
+	import Home from './home/home.vue'
+	import Like from './like/like.vue'
+	import Add from './add/add.vue'
+	import Information from './information/information.vue'
+	import PersonInfo from './personInfo/personInfo.vue'
 	import {mapGetters  } from 'vuex'
 	export default {
 		data() {
@@ -46,6 +46,7 @@
 		min-height: 100vh;
 	}
 	.mainBox{
+		padding-bottom: 100upx;
 		min-height:calc(100vh - 100upx) ;
 		background-color: #f5f5f5;
 	}

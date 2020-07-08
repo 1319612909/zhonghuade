@@ -20,8 +20,8 @@
 </template>
 
 <script>
-	import Tab1 from '../components/home/tab1.vue'
-	import Tab2 from '../components/home/tab2.vue'
+	import Tab1 from '../../components/home/tab1.vue'
+	import Tab2 from '../../components/home/tab2.vue'
 	export default{
 		data(){
 			return{

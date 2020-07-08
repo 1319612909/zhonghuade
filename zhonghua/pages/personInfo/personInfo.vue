@@ -9,19 +9,19 @@
 			</view>
 		</view>
 		<view class="cu-list menu" :class="[menuBorder?'sm-border':'',menuCard?'card-menu margin-top':'']">
-			<view class="cu-item" :class="menuArrow?'arrow':''">
+			<view class="cu-item" :class="menuArrow?'arrow':''" @tap='goDatails'>
 				<view class="content">
 					<text class="cuIcon-friendfamous text-grey"></text>
 					<text class="text-grey">个人信息</text>
 				</view>
 			</view>
-			<view class="cu-item" :class="menuArrow?'arrow':''">
+			<view class="cu-item" :class="menuArrow?'arrow':''"  @tap='goCollect'>
 				<view class="content">
 					<text class="cuIcon-friendfavor text-grey"></text>
 					<text class="text-grey">我的收藏</text>
 				</view>
 			</view>
-			<view class="cu-item" :class="menuArrow?'arrow':''">
+			<view class="cu-item" :class="menuArrow?'arrow':''" @tap="goPraise">
 				<view class="content">
 					<text class="cuIcon-like text-grey"></text>
 					<text class="text-grey">我已点赞</text>
@@ -46,12 +46,6 @@
 			//     console.log(loginRes);
 			//   }
 			// });
-			uni.authorize({
-			    scope: 'scope.userLocation',
-			    success() {
-			        uni.getLocation()
-			    }
-			})
 			
 			this.getuserinfo()
 			this.user = uni.getStorageSync('userInfo')
@@ -73,6 +67,21 @@
 						console.log(err)
 					  }
 					});
+			},
+			goDatails(){
+				uni.navigateTo({
+					url: '/pages/personInfo/datails'
+				})
+			},
+			goCollect(){
+				uni.navigateTo({
+					url: '/pages/personInfo/collect'
+				})
+			},
+			goPraise(){
+				uni.navigateTo({
+					url: '/pages/personInfo/praise'
+				})
 			}
 		}
 	}

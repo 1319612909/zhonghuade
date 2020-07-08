@@ -4,22 +4,31 @@
 		"path": "pages/index"
 		},
 		{
-		"path": "pages/home"
+		"path": "pages/home/home"
 		},
 		{
-		"path": "pages/like"
+		"path": "pages/like/like"
 		},
 		{
-		"path": "pages/information"
+		"path": "pages/information/information"
 		},
 		{
-		"path": "pages/personInfo"
+		"path": "pages/personInfo/personInfo"
+		},
+		{
+		 "path":"pages/personInfo/datails"
+		},
+		{
+		 "path":"pages/personInfo/collect"
+		},
+		{
+		 "path":"pages/personInfo/praise"
 		}
 	],
 	"globalStyle": {
-		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#007AFF",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "种花",
+		"navigationBarBackgroundColor": "#ffffff",
 		"backgroundColor": "#FFFFFF"
 	}
 }
